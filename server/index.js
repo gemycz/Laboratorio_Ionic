@@ -13,7 +13,7 @@ app.use(function(req, res, next){
 });
 
 
-app.use(require('./routers/usuario'))
+app.use(require('./router/usuario'))
 
 http.listen(port, function(){
     console.log('Conectado por http://localhost:'+port);
