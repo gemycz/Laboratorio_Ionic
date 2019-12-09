@@ -4,7 +4,7 @@ const router = express.Router();
 var getConnection = require('../conexion');
 
 router.get('/usuario/:cedula', (req, res)=>{
-    console.log("entrò");
+    console.log("entró");
     getConnection(function(err, conn){
         const{cedula} = req.params;
         if(err){
@@ -26,7 +26,7 @@ router.get('/usuario/:cedula', (req, res)=>{
  //obtener todos los usuarios
 
  router.get('/usuario', (req, res)=>{
-    console.log("entrò");
+    console.log("entró");
     getConnection(function(err, conn){
         const{cedula} = req.params;
         if(err){
